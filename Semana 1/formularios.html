@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario</title>
+</head>
+<body>
+
+	<form action="">
+		<table>
+			<tr>
+				<td><label for="nombres">Nombres</label></td>
+				<td><input name="nombres" id="nombres" title="" pattern="[0-9]{10}" type="text" required> </td>
+			</tr>
+			<tr>
+				<td>Apellidos</td>
+				<td><input name="apellidos" type="text" required></td>
+			</tr>
+			<tr>
+				<td>Comentario</td>
+				<td><textarea name="comentario" id="" cols="20" rows="10"></textarea required></td>
+			</tr>
+
+			<tr>
+				<td>Type: checkbox</td>
+				<td><input type="checkbox"></td>
+			</tr>
+			
+			<tr>
+				<td>Type: Color</td>
+				<td><input type="color"></td>
+			</tr>
+			<tr>
+				<td>Type: Date</td>
+				<td><input type="date"></td>
+			</tr>
+			<tr>
+				<td>Type: Datetime</td>
+				<td><input type="datetime-local"></td>
+			</tr>
+			<tr>
+				<td>Type: email</td>
+				<td><input type="email" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required></td>
+			</tr>
+
+			<tr>
+				<td>Type: file</td>
+				<td><input type="file"></td>
+			</tr>
+			<tr>
+				<td>Type: Hidden</td>
+				<td><input type="hidden" value="Javascript"></td>
+			</tr>
+			<tr>
+				<td>Type: image</td>
+				<td><input type="image"></td>
+			</tr>
+			<tr>
+				<td>Type: Month</td>
+				<td><input type="month"></td>
+			</tr>
+			<tr>
+				<td>Type: Number</td>
+				<td><input type="number"></td>
+			</tr>
+			<tr>
+				<td>Type: Password</td>
+				<td><input type="password"></td>
+			</tr>
+			<tr>
+				<td>Type: Radio</td>
+				<td><input type="radio"></td>
+			</tr>
+			<tr>
+				<td>Type: Range</td>
+				<td><input type="range"></td>
+			</tr>
+			<tr>
+				<td>Type: Range</td>
+				<td><input type="reset"></td>
+			</tr>
+			<tr>
+				<td>Type: Search</td>
+				<td><input type="search"></td>
+			</tr>
+			<tr>
+				<td>Type: Tel</td>
+				<td><input type="tel"></td>
+			</tr>
+			<tr>
+				<td>Type: Time</td>
+				<td><input type="time"></td>
+			</tr>
+			<tr>
+				<td>Type: URL</td>
+				<td><input type="url" required></td>
+			</tr>
+			<tr>
+				<td>Type: week</td>
+				<td>
+					<fieldset>
+						<legend>Datos de usuario</legend>
+						<input type="week" required>
+						<input type="date">
+					</fieldset>
+					
+				</td>
+			</tr>
+
+			<tr>
+				<td>Select</td>
+				<td>
+					<select name="" id="" size="6">
+						<optgroup label="Sudamerica">
+							<option value="argentina">Argentina</option>
+							<option value="peru">Perú</option>
+							<option value="brazil">Brazil</option>
+							<option value="uruguay">Uruguay</option>
+						</optgroup>
+						<optgroup label="Europa">
+							<option value="españa">España</option>
+							<option value="alemania">Alemania</option>
+							<option value="italia">Italia</option>
+							<option value="francia">Francia</option>
+						</optgroup>
+					</select>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Datalist</td>
+				<td>
+					<input type="text" list="paises">
+					<datalist id="paises">
+						<option value="argentina">Argentina</option>
+						<option value="peru">Perú</option>
+						<option value="brazil">Brazil</option>
+						<option value="uruguay">Uruguay</option>
+					</datalist>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<input type="submit" value="enviar">
+				</td>
+				
+			</tr>
+			
+			
+
+		</table>	
+		
+		
+
+	</form>
+
+	
+</body>
+</html>
