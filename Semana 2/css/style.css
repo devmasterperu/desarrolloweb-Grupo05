@@ -1,0 +1,127 @@
+body{
+	height: 1000px;
+}
+
+@font-face{
+	font-family: Chocolate;
+	src: url(../fonts/PermanentMarker-Regular.ttf);
+	font-weight: 400;
+}
+
+@font-face{
+	font-family: Chocolate;
+	src: url(../fonts/PermanentMarker-Bold.ttf);
+	font-weight: 800;
+}
+
+.fruta{
+	max-width: 400px;
+	max-height: 400px;
+	min-height: 300px;
+	padding: 40px;
+	margin: 40px auto;
+	color: inherit;
+	background-color: initial;
+	outline: solid 10px green;
+	
+	
+	line-height: 50px;
+	direction: rtl;
+	
+	
+	/*background-image: url(../img/manzana.png);*/
+	background-image: url(http://www.stickpng.com/assets/images/580b57fbd9996e24bc43c11c.png);
+	background-size: 80px;
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	background-attachment: scroll;
+	background-origin: content-box;
+	text-transform: capitalize;
+	border: solid 5px #ff0000;
+	
+
+	background-blend-mode: multiply;
+	/*background:#00000 url(..img/manzana.png) no-repeat fixed center;*/
+	/*border-radius: 20%;*/
+
+	/*border-style: solid;
+	border-color: green;
+	border-width: 20px;
+	border-radius: 50%;
+
+	border-top: green 10px solid;
+	border-bottom: red 5px solid;*/
+
+	
+	font-family: Arial;
+	font-size: 1.125rem;
+	font-weight: 400;
+	font-style: italic;
+
+	position: relative;
+	top: 0;
+	left: 50px;
+	z-index: 1;
+}
+
+.fruta p{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.fruta span{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+
+
+.fruta i{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.fruta strong{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.fruta div{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%,-50%);
+}
+
+.cuadrado{
+	width: 200px;
+	height: 200px;
+	background-color: blue;
+	position: relative;
+	z-index: 2;
+
+}
+
+.fruta span{
+	font-size: 2rem;
+	opacity: .5;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.nombre{
+	width: 300px;
+	height: 100px;
+	background-color: #cecece;
+	color: #000;
+	text-align: center;
+	margin: -90px auto 40px;
+	border: 8px;
+
+}
