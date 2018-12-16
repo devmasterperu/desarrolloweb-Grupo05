@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Semana 3</title>
+	<style>
+		.overflow{
+			background: tomato;
+			overflow: auto;
+			min-height: 100px;
+		}
+
+		.overflow > p{
+			color: #fff;
+		}
+		.overflow a + span{
+			background: #fff;
+		}
+
+		.overflow a ~ span{
+			color: yellow;
+		}
+		.overflow [id="texto"]{
+			font-size: 5rem;
+		}
+		.overflow [class~="elem2"]{
+			color: blue;
+		}
+		.overflow [class|="la"]{
+			border-bottom: solid 2px #000;
+		}
+		.overflow [class^="elem"]{
+			font-size: 8px;
+		}
+		.overflow [class$="o"]{
+			font-style: italic;
+		}
+		.overflow [class*="hola"]{
+			text-transform: uppercase;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="overflow">
+		<p class="elem elem2">Lorem ipsum.</p>
+		<img src="" alt="">
+		<a href="">hola</a>
+		<span id="texto" class="la-per">hola mundo</span>
+		<span class="elem3 la-col">hola mundo 2</span>
+		<div>
+			<p class="elem2 texto">no tengo que pintarme</p>
+		</div>
+		<p class="elem4 pinholatar">tambien tengo que pintarme</p>
+	</div>
+
+
+
+</body>
+</html>

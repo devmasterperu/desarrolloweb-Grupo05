@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Selectores</title>
+	<style>
+		.lista li:first-child, .lista li:last-child{
+			color: red;
+		}
+		.variado p:first-of-type, .variado p:last-of-type{
+			color: blue;
+		}
+		.texto::first-line{
+			color: gray;
+		}
+		.texto::first-letter{
+			font-size: 30px;
+		}
+		.hijo p:only-child{
+			color: purple;
+		}
+		.variado i:only-of-type{
+			background: red;
+		}
+		.lista li:nth-last-child(4){
+			background: blue;
+		}
+		.variado p:nth-last-of-type(2){
+			background: gray;
+		}
+		.boton{
+			background: tomato;
+			color: #fff;
+			border-radius: 20px;
+			padding: 10px 40px;
+			border: 0;
+			transition: all .2s linear;
+		}
+		.boton:hover{
+			background: lightgreen;
+		}	
+		.variado p:not(:last-child){
+			background: red;
+		}
+		h1{
+			position: relative;
+			text-align: center;
+		}
+		h1:before{
+			content:"";
+			width: 100px;
+			height: 2px;
+			display: inline-block;
+			background: red;
+			position: absolute;
+			top: 12px;
+			right: 10px;
+		}
+		h1:after{
+			content:"";
+			width: 100px;
+			height: 2px;
+			display: inline-block;
+			background: red;
+			position: absolute;
+			top: 12px;
+			left: 10px;
+		}
+
+	</style>
+</head>
+<body>
+	<ul class="lista">
+		<li>Elemento 1</li>
+		<li>Elemento 2</li>
+		<li>Elemento 3</li>
+		<li>Elemento 4</li>
+		<li>Elemento 5</li>
+		<li>Elemento 6</li>
+		<li>Elemento 7</li>
+		<li>Elemento 8</li>
+	</ul>
+
+	<p class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat eligendi vitae eum, quia harum, molestias nemo facere laborum porro, voluptate delectus vero assumenda iste error excepturi commodi, et quo! Culpa cupiditate voluptates ducimus laudantium a neque et earum quaerat architecto labore quibusdam debitis similique, quasi ea perspiciatis repellat libero pariatur quas, porro nisi eos optio inventore vel illum. Minus nisi tenetur quaerat qui. Incidunt fuga, rem excepturi hic suscipit, eius consequuntur, corporis velit, facilis ipsa ad nostrum sit esse. Reprehenderit labore minus quae rerum non id? Dolore rerum sed laborum aut debitis ipsa voluptatem, possimus, non illo excepturi, eius quos?</p>
+
+
+	<div class="variado">
+		<span>Hola soy un span</span>
+		<p>Hola soy un p</p>
+		<p>Hola soy un p</p>
+		<i>Hola soy un i</i>
+		<p>Hola soy un p</p>
+	</div>
+
+ 	<br><br>
+
+
+	<button class="boton">Enviar</button>
+
+	<div class="hijo">
+		<p>hola soy un p</p>
+	</div>
+
+	<div class="hijo">
+		<p>hola soy un p</p>
+		<span>soy un span</span>
+	</div>
+
+
+	<h1>Hola Mundo</h1>
+
+	
+
+
+</body>
+</html>
