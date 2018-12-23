@@ -1,0 +1,123 @@
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.menu{
+	box-shadow: 0 2px 6px rgba(0,0,0,.1);
+	padding: 20px 48px; 
+}
+
+.menu .navbar-collapse{
+	justify-content: flex-end;
+}
+
+.menu .navbar-brand{
+	font-size: 1.7rem;
+	font-weight: 800;
+}
+
+.menu .navbar-nav .nav-link{
+	font-size: 1.1rem;
+	color: #000;
+	transition: all .3s;
+}
+
+.menu .navbar-nav .nav-link:hover{
+	color: #5989e5;
+}
+
+.btn-landy{
+	background: rgb(89,137,229);
+    background: linear-gradient(90deg, rgba(89,137,229,1) 0%, rgba(55,207,220,1) 100%);
+    border-radius: 30px;
+    padding: 10px 40px;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    margin-left: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,.2);
+    transition: all .3s;
+}
+.btn-landy:hover{
+	color: #fff;
+	text-decoration: none;
+	filter: brightness(110%);
+}
+
+
+
+.banner{
+	min-height: 650px;
+	background-color: #F5F5F5;
+	display: flex;
+	align-items: center;
+}
+
+.banner h1{
+	font-weight: 800;
+	font-size: 45px;
+	margin-bottom: 25px;
+}
+.banner p{
+	color: #777;
+	font-size: 18px;
+	margin-bottom: 50px;
+}
+.banner .btn-landy{
+	display: inline-block;
+	margin-left: 0;
+	margin-right: 10px;
+}
+
+.btn-landy-outline{
+	background-color: transparent;
+	color: #5989e5;
+	border: solid 1px #5989e5;
+	padding: 10px 30px;
+	border-radius: 30px;
+	transition: all .3s;
+}
+
+.btn-landy-outline:hover{
+	background-color: #5989e5;
+	color: #fff;
+	text-decoration: none;
+}
+
+.about{
+	padding: 150px 0;
+	background-color: #F5F5F5;
+	
+}
+
+.about h2{
+	font-weight: 800;
+	font-size: 45px;
+}
+.about p{
+	font-size: 18px;
+	line-height: 30px;
+	color: #777;
+	width: 75%;
+}
+.about .btn-landy{
+	display: inline-block;
+}
+/*Desktop pequeñas*/
+@media screen and (min-width: 993px) and (max-width: 1200px){
+	
+}
+
+
+/*Tablet*/
+@media screen and (min-width: 769px) and (max-width: 992px){
+	
+}
+
+
+/*Dispositivos Mobile*/
+@media screen and (max-width: 768px){
+
+
+}
