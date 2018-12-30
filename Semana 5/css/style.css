@@ -1,0 +1,288 @@
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.menu{
+	box-shadow: 0 2px 6px rgba(0,0,0,.1);
+	padding: 20px 48px; 
+}
+
+.menu .navbar-collapse{
+	justify-content: flex-end;
+}
+
+.menu .navbar-brand{
+	font-size: 1.7rem;
+	font-weight: 800;
+}
+
+.menu .navbar-nav .nav-link{
+	font-size: 1.1rem;
+	color: #000;
+	transition: all .3s;
+}
+
+.menu .navbar-nav .nav-link:hover{
+	color: #5989e5;
+}
+
+.btn-landy{
+	background: rgb(89,137,229);
+    background: linear-gradient(90deg, rgba(89,137,229,1) 0%, rgba(55,207,220,1) 100%);
+    border-radius: 30px;
+    padding: 10px 40px;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    margin-left: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,.2);
+    transition: all .3s;
+}
+.btn-landy:hover{
+	color: #fff;
+	text-decoration: none;
+	filter: brightness(110%);
+}
+
+
+
+.banner{
+	min-height: 650px;
+	background-color: #F5F5F5;
+	display: flex;
+	align-items: center;
+}
+
+.banner h1{
+	font-weight: 800;
+	font-size: 45px;
+	margin-bottom: 25px;
+}
+.banner p{
+	color: #777;
+	font-size: 18px;
+	margin-bottom: 50px;
+}
+.banner .btn-landy{
+	display: inline-block;
+	margin-left: 0;
+	margin-right: 10px;
+}
+
+.btn-landy-outline{
+	background-color: transparent;
+	color: #5989e5;
+	border: solid 1px #5989e5;
+	padding: 10px 30px;
+	border-radius: 30px;
+	transition: all .3s;
+}
+
+.btn-landy-outline:hover{
+	background-color: #5989e5;
+	color: #fff;
+	text-decoration: none;
+}
+
+.about{
+	padding: 150px 0;
+	background-color: #F5F5F5;
+	
+}
+
+.about h2{
+	font-weight: 800;
+	font-size: 45px;
+}
+.about p{
+	font-size: 18px;
+	line-height: 30px;
+	color: #777;
+	width: 75%;
+}
+.about .btn-landy{
+	display: inline-block;
+}
+
+.tabs-section{
+	padding: 60px 0;
+}
+
+.nav-tabs{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    border: none;
+    margin-top: 100px;
+}
+
+.nav-tabs li{
+    display: inline-block;
+    width: 300px;
+    border: none;
+}
+
+
+.item-tab{
+	background-color: #fff;
+	box-shadow: 0 4px 50px rgba(0,0,0,.2);
+	padding: 40px;
+	display: block;
+	position: relative;
+	color: #000;
+	transition: all .3s;
+}
+
+.item-tab.active{
+	background-color: #F5F5F5;
+	transform: translateY(-20px);
+}
+
+.item-tab:hover{
+	text-decoration: none;
+	color: #000;
+}
+
+
+.item-tab .numero{
+	background: rgb(89,137,229);
+    background: linear-gradient(90deg, rgba(89,137,229,1) 0%, rgba(55,207,220,1) 100%);
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	display: block;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	font-weight: 600;
+	font-size: 20px;
+	position: absolute;
+	top: -25px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+.tab-content img{
+	width: 100%;
+}
+
+.navegador{
+	max-width: 610px;
+	margin: 20px auto;
+	padding-top: 40px;
+	background-color: #F7F7F7;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 4px 40px rgba(0,0,0,.2);
+	position: relative;
+}
+.navegador:before{
+	content: "";
+	width: 10px;
+	height: 10px;
+	background-color: #f44;
+	display: inline-block;
+	position: absolute;
+	top: 15px;
+	left: 20px;
+	border-radius: 50%;
+	box-shadow: 20px 0 0 #9b3, 40px 0 0  #fb5;
+}
+
+.feature-info{
+	min-height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.feature-info .icono{
+	width: 40px;
+}
+
+.feature-info h3{
+	margin-top: 20px;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.feature-info p{
+	line-height: 20px;
+    font-size: 14px;
+    color: #656565;
+    margin: 20px 0 25px;
+}
+
+.feature-info .btn-landy{
+	display: inline-block;
+}
+
+.foto img{
+	width: 100%
+}
+.features{
+	padding: 60px 0;
+}
+
+.features .row{
+	padding: 20px 0;
+}
+
+.features .row:nth-child(even) div:nth-child(1){
+	order: 2;
+}
+.features .row:nth-child(even) div:nth-child(2){
+	order: 1;
+}
+
+.great{
+	background-color: #638ADE;
+	padding: 60px 0;
+}
+
+.item-great{
+	padding: 40px 20px;
+	text-align: center;
+	color: #fff;
+	transition: all .5s;
+}
+.item-great:hover{
+	background-color: #5681DC;
+	box-shadow: 0 5px 40px rgba(0,0,0,.3);
+}
+
+.item-great i{
+	font-size: 50px;
+}
+.item-great h3{
+	font-weight: bold;
+	font-size: 20px;
+}
+.item-great p{
+	font-size: 15px;
+	line-height: 25px;
+	font-weight: 400;
+}
+
+/*Desktop pequeñas*/
+@media screen and (min-width: 993px) and (max-width: 1200px){
+	.banner img{
+		width: 100%;
+	}
+}
+
+
+/*Tablet*/
+@media screen and (min-width: 769px) and (max-width: 992px){
+	
+}
+
+
+/*Dispositivos Mobile*/
+@media screen and (max-width: 768px){
+
+
+}
