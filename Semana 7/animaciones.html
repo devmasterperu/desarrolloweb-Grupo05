@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Animaciones CSS3</title>
+	<style>
+		.cuadrado{
+			width: 200px;
+			height: 200px;
+			background-color: tomato;
+
+			animation-name: cuadrado;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+
+			animation-delay: 3s;
+			animation-timing-function: linear;
+			animation-direction: alternate;
+			display: none;
+		}
+
+		@keyframes cuadrado{
+			from{
+
+			}
+			to{
+				background-color: green;
+				border-radius: 50%;
+				transform: rotate(180deg) translate(40px);
+			}
+		}
+
+		body,html{
+			min-width: 100%;
+			min-height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items:center;
+		}
+
+
+		.loading{
+			width: 90px;
+			height: 90px;
+			border-radius: 50%;
+			border: solid 5px transparent;
+			border-top: solid 5px tomato;
+
+			animation-name: loading;
+			animation-duration: 1s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+		}
+		.loading2{
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			border: solid 5px transparent;
+			border-top: solid 5px lightgreen;
+			position: absolute;
+
+
+			animation-name: loading-rev;
+			animation-duration: 1.2s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+		}
+		.loading3{
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			border: solid 5px transparent;
+			border-top: solid 5px lightblue;
+			position: absolute;
+			animation-name: loading;
+			animation-duration: 1.5s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+		}
+
+		
+
+		@keyframes loading{
+			0%{
+
+			}
+			50%{
+				border-top: solid 5px pink;
+			}
+			100%{
+				transform: rotate(360deg);
+			}
+		}
+
+		@keyframes loading-rev{
+			0%{
+
+			}
+			100%{
+				transform: rotate(-360deg);
+			}
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<div class="loading">
+		
+	</div>
+	
+	<div class="loading2">
+		
+	</div>
+	
+	<div class="loading3">
+		
+	</div>
+	
+	<div class="cuadrado">
+		
+	</div>
+	
+</body>
+</html>

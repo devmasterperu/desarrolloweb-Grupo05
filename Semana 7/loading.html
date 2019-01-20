@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Loading</title>
+	<style>
+		body, html{
+			min-width: 100%;
+			min-height: 100%;
+			background-color: #000;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.circulo{
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			background-color: tomato;
+			margin: 5px;
+
+			animation-name: loading;
+			animation-duration: .5s;
+			animation-delay: .2s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+			animation-timing-function: ease;
+		
+		}
+
+		.circulo:nth-child(2){
+			background-color: lightgreen;
+			animation-delay: .3s;
+			
+		}
+		.circulo:nth-child(3){
+			background-color: skyblue;
+			animation-delay: .4s;
+			
+		}
+		.circulo:nth-child(4){
+			background-color: yellow;
+			animation-delay: .5s;
+			
+		}
+
+		@keyframes loading{
+			0%{
+				
+			}
+			60%{
+				
+			}
+			100%{
+				transform: translateY(-40px);
+			}
+		}
+
+
+	</style>
+</head>
+<body>
+	
+	<div class="circulo"></div>
+	<div class="circulo"></div>
+	<div class="circulo"></div>
+	<div class="circulo"></div>
+
+</body>
+</html>
